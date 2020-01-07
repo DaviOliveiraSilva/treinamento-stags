@@ -28,6 +28,26 @@ body {
     margin: 0 2em;
 }
 
+.nav__pages {
+    display: flex;
+    height: 100%;
+}
+
+.nav__pages--item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 8em;
+
+    color: white;
+    text-decoration: none;
+}
+
+.nav__pages--item:hover{
+    background-color: red;
+}
+
 .footer{
     position: absolute;
     display: flex;
