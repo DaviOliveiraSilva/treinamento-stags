@@ -4,10 +4,6 @@ loadPokemons().then(() => {
     open('home')
 })
 
-function test() {
-    console.log('deu bom');
-}
-
 function open(page){
     var rawFile = new XMLHttpRequest();
     rawFile.open('GET', `pages/${page}.html`, true);
