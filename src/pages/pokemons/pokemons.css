@@ -1,0 +1,24 @@
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.evolutions {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.evolutions__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.evolutions__item--img {
+    width: 6em;
+}
+

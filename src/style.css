@@ -54,8 +54,10 @@ body {
     background-color: red;
 }
 
-#container {
+#content {
     flex: 1;
+    padding: 1em;
+    display: flex;
 }
 
 .footer{

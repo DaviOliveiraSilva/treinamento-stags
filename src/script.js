@@ -1,4 +1,4 @@
-var pokemons = [];
+var pokemons = new Array;
 loadPokemons().then(() => {
     console.log(pokemons);
     open('home')
@@ -6,7 +6,7 @@ loadPokemons().then(() => {
 
 function open(page){
     var rawFile = new XMLHttpRequest();
-    rawFile.open('GET', `pages/${page}.html`, true);
+    rawFile.open('GET', `pages/${page}/${page}.html`, true);
     rawFile.setRequestHeader('Content-Type', 'application/xml');
     rawFile.onreadystatechange = function ()
     {
@@ -15,9 +15,13 @@ function open(page){
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-                document.getElementById("container").innerHTML = allText
+                document.getElementById("content").innerHTML = allText
             }
         }
     }
     rawFile.send();
+}
+
+function test() {
+    console.log('WOOOOOOW')
 }
