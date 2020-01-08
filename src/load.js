@@ -1,3 +1,4 @@
+const pokemons = [];
 async function loadPokemons() {
     const x = await fetch('https://pokeapi.co/api/v2/pokemon/?limit=150')
     let y = await x.json();

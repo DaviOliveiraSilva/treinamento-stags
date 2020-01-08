@@ -1,7 +1,5 @@
-var pokemons = [];
 loadPokemons().then(() => {
     console.log(pokemons);
-    open('home')
 })
 
 function open(page){
