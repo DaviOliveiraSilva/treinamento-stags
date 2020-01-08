@@ -1,13 +1,12 @@
-var pokemons = new Array;
 loadPokemons().then(() => {
     console.log(pokemons);
-    open('home')
 })
 
-function open(page){
+const openPage = () =>{
+    const local = location.hash.slice(2);
+    
     var rawFile = new XMLHttpRequest();
-    rawFile.open('GET', `pages/${page}/${page}.html`, true);
-    rawFile.setRequestHeader('Content-Type', 'application/xml');
+    rawFile.open('GET', `pages/${local}/${local}.html`, true);
     rawFile.onreadystatechange = function ()
     {
         if(rawFile.readyState === 4)
@@ -20,8 +19,8 @@ function open(page){
         }
     }
     rawFile.send();
+
 }
 
-function test() {
-    console.log('WOOOOOOW')
-}
+window.addEventListener('hashchange', openPage)
+window.addEventListener('load', openPage)
