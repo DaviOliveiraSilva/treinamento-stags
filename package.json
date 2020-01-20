@@ -1,0 +1,23 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "Treinamento de Front-End dos estagiarios 2020",
+  "main": "index.js",
+  "scripts": {
+    "start":  "http-server src/ -o -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaviOliveiraSilva/treinamento-stags.git"
+  },
+  "author": "DaviOliveiraSilva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaviOliveiraSilva/treinamento-stags/issues"
+  },
+  "homepage": "https://github.com/DaviOliveiraSilva/treinamento-stags#readme",
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
+}
