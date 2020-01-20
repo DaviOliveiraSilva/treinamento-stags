@@ -86,3 +86,38 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.evolutions {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.evolutions__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.evolutions__item--img {
+    width: 6em;
+}
+
+.change {
+    background-color: rgb(255, 51, 51);
+    height: 6em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
